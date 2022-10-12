@@ -2,6 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
+class DogChecker implements StringChecker {
+  public boolean checkString(String s) {
+    if(s.contains("dog"))
+      return false;
+    return true;
+  }
+}
 
 class ListExamples {
 

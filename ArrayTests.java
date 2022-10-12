@@ -4,9 +4,9 @@ import org.junit.*;
 public class ArrayTests {
 	@Test 
 	public void testReverseInPlace() {
-    int[] input1 = { 11,12,13,14 };
+    int[] input1 = { 11,12,13,14,15 };
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 14,13,12,11 }, input1);
+    assertArrayEquals(new int[]{ 15,14,13,12,11 }, input1);
 	}
 
 
@@ -19,7 +19,7 @@ public class ArrayTests {
   @Test
   public void testAvg(){
     double delta = 0.05;
-    double[] input1 = {1,0,2,3};
-    assertEquals(2, ArrayExamples.averageWithoutLowest(input1), 0.05);
+    double[] input1 = {0, 1};
+    assertEquals(1, ArrayExamples.averageWithoutLowest(input1), delta);
   }
 }
