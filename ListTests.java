@@ -8,13 +8,11 @@ public class ListTests {
     public void testFilter() {
         List<String> testList = new ArrayList<>();
         testList.add("Apple");
-        testList.add("dog");
-        //testList.add("Peach");
-
-
+        testList.add("Peach");
         List<String> checkList = ListExamples.filter(testList, new DogChecker());
         assertEquals(testList, checkList);
     }
+    /* 
     @Test 
     public void testMerge() {
         List<String> list1 = new ArrayList<>();
@@ -29,4 +27,5 @@ public class ListTests {
         testList.add("b");
         assertEquals(merged,testList);
     }
+    */
 }
